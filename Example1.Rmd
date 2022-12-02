@@ -1,0 +1,18 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+## Front Matter
+```{r}
+library(palmerpenguins)
+library(tidyverse)
+```
+
+## Plot
+```{r}
+ggplot(data = penguins, mapping = aes(x = bill_depth_mm, y = bill_length_mm, color = species)) + 
+  geom_point()
+```
+
+
